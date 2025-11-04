@@ -1,0 +1,18 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="project2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#project2Gradient)" rx="8"/>
+  <circle cx="100" cy="120" r="25" fill="white" opacity="0.8"/>
+  <rect x="150" y="100" width="60" height="20" fill="white" opacity="0.6" rx="10"/>
+  <rect x="230" y="100" width="60" height="20" fill="white" opacity="0.6" rx="10"/>
+  <rect x="50" y="160" width="300" height="8" fill="white" opacity="0.3" rx="4"/>
+  <rect x="50" y="175" width="250" height="8" fill="white" opacity="0.2" rx="4"/>
+  <polygon points="350,50 370,70 350,90 330,70" fill="white" opacity="0.4"/>
+  <polygon points="380,80 390,90 380,100 370,90" fill="white" opacity="0.3"/>
+  <text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" opacity="0.9">🎮</text>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white" opacity="0.8">Juego 2D en Unity</text>
+</svg>

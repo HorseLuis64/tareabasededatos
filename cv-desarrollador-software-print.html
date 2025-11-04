@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Jorge Luis Castro Uribe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            margin: 0;
+            padding: 20px;
+            background: white;
+            color: #333;
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #16a34a;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 24px;
+            color: #16a34a;
+            margin: 0;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #dc2626;
+            font-size: 18px;
+            border-bottom: 1px solid #dc2626;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .skill-category {
+            padding: 10px;
+            border-left: 2px solid #16a34a;
+        }
+        .skill-category h4 {
+            color: #dc2626;
+            margin: 0 0 5px 0;
+            font-size: 14px;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+        }
+        .skill-list li {
+            padding: 2px 0;
+            color: #333;
+        }
+        .project {
+            padding: 10px;
+            border-left: 2px solid #16a34a;
+            margin-bottom: 10px;
+        }
+        .project h4 {
+            color: #dc2626;
+            margin: 0 0 5px 0;
+            font-size: 14px;
+        }
+        .project p {
+            margin: 0 0 5px 0;
+            font-size: 12px;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .tech-tag {
+            background: #16a34a;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+        }
+        .soft-skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .soft-skill {
+            padding: 8px;
+            border-left: 2px solid #dc2626;
+            text-align: center;
+            font-size: 12px;
+        }
+        .soft-skill h4 {
+            color: #16a34a;
+            margin: 0 0 3px 0;
+            font-size: 12px;
+        }
+        .soft-skill p {
+            margin: 0;
+            font-size: 10px;
+        }
+        @media print {
+            body { 
+                padding: 10px; 
+                background: white !important;
+            }
+            .cv-container { 
+                padding: 10px; 
+                box-shadow: none;
+            }
+            .section { 
+                page-break-inside: avoid; 
+                margin-bottom: 15px;
+            }
+            .section-title { 
+                page-break-after: avoid; 
+            }
+            .project, .skill-category, .soft-skill {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1 class="name">Jorge Luis Castro Uribe</h1>
+            <p class="title">Estudiante de Ingeniería de Sistemas</p>
+            <div class="contact-info">
+                <div class="contact-item">📍 Villavicencio, Colombia</div>
+                <div class="contact-item">📱 3213960440</div>
+                <div class="contact-item">✉️ horseluis77@outlook.com</div>
+                <div class="contact-item">🎓 Uniminuto Villavicencio</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Perfil Profesional</h2>
+            <p style="font-size: 12px;">
+                Soy Jorge Luis Castro Uribe, estudiante de Ingeniería de Sistemas en Uniminuto Villavicencio. 
+                Me apasiona la tecnología y el desarrollo de soluciones innovadoras. Me caracterizo por mi capacidad 
+                de aprendizaje rápido, trabajo en equipo y compromiso con los proyectos. Vivo en Villavicencio 
+                y estoy constantemente actualizándome en nuevas tecnologías.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Habilidades Blandas</h2>
+            <div class="soft-skills">
+                <div class="soft-skill">
+                    <h4>Trabajo en Equipo</h4>
+                    <p>Colaboración efectiva</p>
+                </div>
+                <div class="soft-skill">
+                    <h4>Aprendizaje Continuo</h4>
+                    <p>Actualización constante</p>
+                </div>
+                <div class="soft-skill">
+                    <h4>Resolución de Problemas</h4>
+                    <p>Análisis técnico</p>
+                </div>
+                <div class="soft-skill">
+                    <h4>Comunicación</h4>
+                    <p>Explicación clara</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Lenguajes de Programación</h4>
+                    <ul class="skill-list">
+                        <li>• C++ - Bajo-Intermedio</li>
+                        <li>• C# - Intermedio</li>
+                        <li>• C - Básico</li>
+                        <li>• Assembler - Conceptos Básicos</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Frameworks y Herramientas</h4>
+                    <ul class="skill-list">
+                        <li>• Unity - Experiencia</li>
+                        <li>• Next.js - En Desarrollo</li>
+                        <li>• React - En Desarrollo</li>
+                        <li>• Tailwind CSS - En Desarrollo</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Bases de Datos</h4>
+                    <ul class="skill-list">
+                        <li>• MySQL - Básico</li>
+                        <li>• PostgreSQL - Básico</li>
+                        <li>• MongoDB - Conceptos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="project">
+                <h4>Ingeniería de Sistemas - Uniminuto Villavicencio</h4>
+                <p><strong>Ubicación:</strong> Villavicencio, Colombia</p>
+                <p><strong>Estado:</strong> En curso</p>
+                <p style="font-size: 11px;">Formación en desarrollo de software, bases de datos, redes, y fundamentos de ingeniería de sistemas.</p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="section">
+            <h2 class="section-title">Información de Contacto</h2>
+            <p style="font-size: 12px;"><strong>Teléfono:</strong> 3213960440</p>
+            <p style="font-size: 12px;"><strong>Correo Electrónico:</strong> horseluis77@outlook.com</p>
+            <p style="font-size: 12px;"><strong>Ubicación:</strong> Villavicencio, Colombia</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        function downloadPDF() {
+            const element = document.querySelector('.cv-container');
+            const opt = {
+                margin: 0.5,
+                filename: 'CV-Jorge-Luis-Castro-Uribe.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+        <button onclick="downloadPDF()" style="background: #16a34a; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 14px;">
+            ⬇️ Descargar PDF
+        </button>
+    </div>
+</body>
+</html>

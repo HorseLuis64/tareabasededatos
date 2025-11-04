@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Desarrollador de Software</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #000;
+            background: #fff;
+            font-size: 12px;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        
+        .header .title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 11px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #000;
+            text-transform: uppercase;
+        }
+        
+        .profile-text {
+            text-align: justify;
+            margin-bottom: 15px;
+            font-size: 11px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .skill-category {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .skill-category h3 {
+            font-size: 13px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3px;
+            font-size: 10px;
+        }
+        
+        .skill-level {
+            font-size: 9px;
+            color: #666;
+        }
+        
+        .education-item {
+            border-left: 3px solid #000;
+            padding: 8px 0 8px 15px;
+            margin-bottom: 10px;
+        }
+        
+        .education-item h3 {
+            font-size: 13px;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+        
+        .education-item .institution {
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .education-item .description {
+            font-size: 10px;
+            text-align: justify;
+        }
+        
+        .soft-skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .soft-skill {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .soft-skill h4 {
+            font-size: 12px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .soft-skill p {
+            font-size: 9px;
+        }
+        
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            .container {
+                padding: 15mm;
+            }
+            @page {
+                margin: 10mm;
+                size: A4;
+            }
+        }
+        
+        .print-note {
+            background: #f0f0f0;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="print-note">
+            <strong>Nota:</strong> Para convertir este CV a PDF, use la función de impresión de su navegador (Ctrl+P) y seleccione "Guardar como PDF" como destino.
+        </div>
+
+        <header class="header">
+            <h1>Jorge Luis Castro Uribe</h1>
+            <div class="title">Desarrollador de Software</div>
+            <div class="contact-info">
+                <span>📧 horseluis77@outlook.com</span>
+                <span>📱 3213960440</span>
+                <span>🏫 Universidad Uniminuto</span>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Perfil Profesional</h2>
+            <div class="profile-text">
+                Soy un estudiante de desarrollo de software con conocimientos en lenguajes de programación como C++, C y C#, además de una comprensión básica de ensamblador. Me interesa la optimización y el desarrollo de motores de videojuegos, así como la creación de herramientas eficientes para entornos de bajos recursos. Me caracterizo por mi aprendizaje rápido, curiosidad técnica y compromiso con la calidad en cada proyecto que realizo.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Competencias y Soft Skills</h2>
+            <div class="soft-skills">
+                <div class="soft-skill">
+                    <h4>Trabajo en Equipo</h4>
+                    <p>Capacidad para colaborar y adaptarme a distintos grupos de trabajo, aportando ideas y escuchando activamente.</p>
+                </div>
+                <div class="soft-skill">
+                    <h4>Aprendizaje Continuo</h4>
+                    <p>Disposición constante para adquirir nuevos conocimientos en programación y tecnologías emergentes.</p>
+                </div>
+                <div class="soft-skill">
+                    <h4>Resolución de Problemas</h4>
+                    <p>Razonamiento lógico y analítico aplicado a la resolución de desafíos técnicos.</p>
+                </div>
+                <div class="soft-skill">
+                    <h4>Autonomía</h4>
+                    <p>Capacidad para gestionar mi propio aprendizaje y desarrollar proyectos personales de forma independiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Lenguajes de Programación</h3>
+                    <div class="skill-item">
+                        <span>C++</span>
+                        <span class="skill-level">Bajo - Intermedio</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>C</span>
+                        <span class="skill-level">Básico</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Ensamblador</span>
+                        <span class="skill-level">Conceptos Básicos</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>C#</span>
+                        <span class="skill-level">Intermedio</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Formación Académica</h2>
+            <div class="education-item">
+                <h3>Universidad Uniminuto</h3>
+                <div class="institution">Programa de Ingeniería de Software</div>
+                <div class="description">Estudiante en formación con enfoque en desarrollo de software, programación en C++, C# y fundamentos de bajo nivel.</div>
+            </div>
+        </section>
+
+        <div class="print-note">
+            <strong>Instrucciones para guardar como PDF:</strong><br>
+            1. Presione Ctrl+P (Windows) o Cmd+P (Mac)<br>
+            2. Seleccione "Guardar como PDF" como destino<br>
+            3. Ajuste los márgenes si es necesario<br>
+            4. Haga clic en "Guardar"
+        </div>
+</div>
+</body>
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <button onclick="downloadPDF()" style="background: #16a34a; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 14px;">
+        ⬇️ Descargar PDF
+    </button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    function downloadPDF() {
+        const element = document.querySelector('.container');
+        const opt = {
+            margin: 0.5,
+            filename: 'CV-Jorge-Luis-Castro-Uribe.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+    }
+</script>
+</html>
