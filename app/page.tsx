@@ -52,13 +52,8 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">¿Quién Soy Yo?</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <Image
-                src="/profile-placeholder.svg"
-                alt="Foto de perfil"
-                width={400}
-                height={400}
-                className="rounded-full mx-auto"
-              />
+             
+              <img src="/capitan_movilidad.svg" alt="Foto de perfil" width={400} height={400} className="rounded-full mx-auto" />
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Perfil Profesional</h3>
